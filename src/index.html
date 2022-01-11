@@ -9,21 +9,91 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../dist/style.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
-  <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+  <body class="bg-main-background relative font-Outfit">
+    <div class="h-screen flex">
+      <div
+        class="m-auto flex flex-col bg-card-background w-[350px] p-6 rounded-2xl shadow-md"
+      >
+        <!-- Image -->
+        <div class="relative cursor-pointer">
+          <div
+            class="absolute flex justify-center items-center inset-0 bg-cyan/50 opacity-0 hover:opacity-100 rounded-lg"
+          >
+            <img class="" src="../dist/images/icon-view.svg" alt="view" />
+          </div>
+          <img
+            class="rounded-lg"
+            src="../dist/images/image-equilibrium.jpg"
+            alt="equilibrium"
+          />
+        </div>
+        <!-- Title -->
+        <h1
+          class="text-2xl mt-6 text-white hover:text-cyan font-semibold cursor-pointer"
+        >
+          Equilibrium #3429
+        </h1>
+        <!-- Subtitle -->
+        <p class="text-lg mt-4 text-soft-blue font-light">
+          Our Equilibrium collection promotes balance and calm. left Creation of
+          Jules Wyvern
+        </p>
+        <!-- Price and time -->
+        <div class="flex mt-6 justify-between">
+          <div class="flex flex-1 items-center gap-2">
+            <img src="../dist/images/icon-ethereum.svg" alt="ethereum" />
+            <p class="text-md text-cyan font-semibold uppercase">0.041 ETH</p>
+          </div>
+          <div class="flex flex-1 items-center gap-2 justify-end">
+            <img src="../dist/images/icon-clock.svg" alt="ethereum" />
+            <p class="text-md text-soft-blue">3 days left</p>
+          </div>
+        </div>
 
-    <h1 class="text-3xl text-red-900">Testing</h1>
+        <hr class="border-line mt-6 mb-4" />
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Hieu Pham</a>.
+        <!-- User -->
+        <div class="flex gap-x-4 items-center">
+          <img
+            class="w-[32px] h-[32px] border border-white rounded-full"
+            src="../dist/images/image-avatar.png"
+            alt="avatar"
+          />
+          <p class="text-soft-blue">
+            Creation of
+            <span class="text-white cursor-pointer hover:text-cyan"
+              >Jules Wyvern</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="absolute w-screen mx-auto flex flex-col items-center justify-end bottom-6"
+    >
+      <p class="text-soft-blue text-center">
+        Challenge by
+        <a
+          class="text-white hover:text-cyan"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p class="text-soft-blue text-center">
+        Coded by <a class="text-white hover:text-cyan" href="#">Hieu Pham</a>.
+      </p>
     </div>
   </body>
 </html>
