@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](#)
+- Solution URL: [nft-preview-card-component](https://www.frontendmentor.io/solutions/tailwindcss-nodejs-3Nr5L-Oey)
 - Live Site URL: [nft-preview-card-component](https://hieupm2096.github.io/nft-preview-card-component/)
 
 ## My process
